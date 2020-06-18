@@ -18,6 +18,7 @@ if array.length == 0
 else
   puts "Welcome #{name}, You are number #{array.length+1} in line."
 end
+end
 
 
 take_a_number(katz_deli,'Bob')
