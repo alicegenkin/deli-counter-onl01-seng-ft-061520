@@ -13,7 +13,7 @@ end
 line(katz_deli)
 
 def take_a_number(array,name)
-puts array.length+1
+puts "Welcome #{name}, You are number #{array.length+1} in line."
 end
 
 
