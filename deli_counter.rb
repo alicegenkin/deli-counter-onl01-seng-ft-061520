@@ -5,6 +5,7 @@ def line(array)
   end
 else
   array.each_with_index do |value, index| puts "#{index_to_i+1}"
+  end
 end
 
 line(katz_deli)
