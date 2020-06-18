@@ -27,6 +27,7 @@ def now_serving(array)
   else
     element = array.shift
     puts "Currently serving: #{element}"
+  end
 end
 
 
