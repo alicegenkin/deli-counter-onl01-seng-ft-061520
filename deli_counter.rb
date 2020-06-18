@@ -11,3 +11,9 @@ def line(array)
 end
 end
 line(katz_deli)
+
+take_a_number(array,name)
+puts array.length+1
+end
+
+take_a_number(katz_deli,'Bob')
