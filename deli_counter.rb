@@ -21,5 +21,10 @@ else
 end
 end
 
+def now_serving(array)
+  element = array.shift
+  puts "Currently serving: #{element}"
+end
+
 
 take_a_number(katz_deli,'Bob')
