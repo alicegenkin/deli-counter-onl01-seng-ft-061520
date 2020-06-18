@@ -5,7 +5,7 @@ def line(array)
   else
   phrase = "The line is currently:"
   array.each_with_index do |value, index|
-    phrase += "#{index.to_i+1} . #{value} "
+    phrase += "#{index.to_i+1}. #{value} "
     puts phrase
   end
 end
