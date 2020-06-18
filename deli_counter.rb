@@ -1,24 +1,27 @@
-katz_deli = []
-def line(array)
-  if array.length == 0
+katz_deli = [] 
+
+def take_a_number(array, name)
+  array.push(name)
+  position = array.index(name)
+  puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
+  return name, position 
+end 
+
+take_a_number(katz_deli, "Grace")
+take_a_number(katz_deli, "Tom")
+take_a_number(katz_deli, "Alan")
+
+def line(array) 
+  if array.length == 0 
     puts "The line is currently empty."
-  else
-  phrase = "The line is currently:"
-  array.each_with_index do |value, index|
-    phrase += " #{index.to_i+1}. #{value}"
-  end
-    puts phrase
-end
-end
+  else 
+    message = "The line is currently:"
+    
+  array.each_with_index do |value, index| 
+    message += " #{index.to_i+1}. #{value}"
+  end 
+  puts "#{message}"
+  end 
+end 
+ 
 line(katz_deli)
-
-def take_a_number(array,name)
-if array.length == 0
-  puts "The line is currently empty."
-else
-  puts "Welcome #{name}, You are number #{array.length+1} in line."
-end
-end
-
-
-take_a_number(katz_deli,'Bob')
